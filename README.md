@@ -16,6 +16,7 @@
 - [firefox theme](https://codeberg.org/awwpotato/PotatoFox)
 - [wofi](https://github.com/SimplyCEO/wofi)
 - [dunst](https://github.com/dunst-project/dunst)
+- [nighttab](https://github.com/zombieFox/nightTab)
 - ### Terminal Tools
 - [pfetch](https://github.com/dylanaraps/pfetch)
 - [cbonsai](https://gitlab.com/jallbrit/cbonsai)
@@ -32,8 +33,15 @@ Depending on your distro you might have to build some of the dependencies! Heres
 After the dependencies you should do:
 1. git clone https://github.com/imrando/dotfiles
 2. cp -r .dotfiles/* $HOME/.config/
+3. chmod +x ~/.config/waybar/get_distro_icon.sh
+4. chmod +x ~/.config/waybar/launch-waybar
+5. chmod +x ~/.config/wofi/powermenu.sh
 ```
-
-  
+# Screenshots 
+![Nighttab](./raw/2025-04-15T21:04:43,810123060-04:00.png)
+![Le Nvim?](./raw/2025-04-15T21:08:10,114621514-04:00.png)
+![illuminaty by malice mizer](./raw/2025-04-15T21:15:24,986818351-04:00.png)
+![btm.png](./raw/2025-04-15T21:18:16,791426430-04:00.png)
+![el desktop](./raw/2025-04-15T21:17:18,616162144-04:00.png)
 
   
