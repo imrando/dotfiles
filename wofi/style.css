@@ -1,0 +1,51 @@
+@import "everblush.css";
+
+* {
+	font-family: "Miracode", monospace;
+}
+
+window {
+	background-color: transparent;
+}
+
+#input {
+	margin: 5px;
+  border: 2px @cyan;
+  border-style: solid;
+	border-radius: 10px;
+	background-color: @lighter;
+	color: @text;
+  outline-color: @cyan;
+}
+
+
+
+/* #inner-box { */
+/* 	background-color: #303446; */
+/* } */
+
+#outer-box {
+	margin: 2px;
+	padding: 10px;
+  border: 2px @cyan;
+  border-style: solid;
+  border-radius: 5px;
+	background-color: @background;
+}
+
+#scroll {
+	margin: 5px;
+}
+
+#text {
+	padding: 4px;
+	color: @text;
+}
+
+#entry:selected {
+	background-color: @lighter;
+}
+
+#text:selected {
+	background: transparent;
+}
