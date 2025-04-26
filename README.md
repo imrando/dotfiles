@@ -5,16 +5,85 @@
 <h4 align="center"><i>Simple et minimaliste!</i></h4> 
 
 ## Components
-|    |   Component        | Description |
-|----|-------------------|---------------------------------------------------------------|
-| ⚙️  | **Architecture**  | *The project follows a modular architecture emphasizing dynamic configuration handling and event-driven scripts. It focuses on creating a robust plugin ecosystem for enhanced user experience within the Sway window manager.* |
-| 🔩 | **Code Quality**  | *The codebase exhibits well-structured and maintainable code with a focus on modularity. It follows Rust best practices and emphasizes readability and extensibility for plugin development.* |
-| 📄 | **Documentation** | *The project includes detailed documentation embedded within the codebase, explaining the purpose and functionality of various components. However, external documentation could be enhanced to onboard new contributors and users efficiently.* |
-| 🔌 | **Integrations**  | *Key integrations include Cargo for dependency management and various Rust libraries like toml-rs, yaml-rust for configuration handling. These integrations enhance the project's functionality and interoperability.* |
-| 🧩 | **Modularity**    | *The codebase demonstrates high modularity with separate modules for configurations, plugins, and models. This design promotes code reusability and makes it easier to extend and customize plugin functionalities.* |
-| 🧪 | **Testing**       | *The project uses Rust's built-in testing framework for unit tests to ensure the reliability and correctness of the codebase. However, additional integration and end-to-end testing could further improve overall code quality.* |
-| ⚡️  | **Performance**   | *The codebase emphasizes efficiency in event processing and plugin lifecycle management. It aims to provide a smooth user experience within the Sway environment, focusing on speed and resource optimization.* |
-| 🛡️ | **Security**      | *Security measures include graceful error handling, configuration validation, and dynamic command execution to prevent vulnerabilities. However, further security audits and validation checks are recommended.* |
-| 📦 | **Dependencies**  | *Key dependencies include Cargo for package management, with dependencies like toml-rs and yaml-rust for configuration handling. These libraries enhance the project's capabilities and contribute to its functionality.* |
 
----
+### Main 
+- **Distro** - [Artix Linux](https://artixlinux.org/)
+- **Init** - [Runit](https://wiki.artixlinux.org/Main/Runit)
+- **Window Manager** - [Sway](https://swaywm.org/)
+- **Terminal** - [Kitty](https://sw.kovidgoyal.net/kitty/)
+- **Bar** - [Waybar](https://github.com/Alexays/Waybar)
+- **Notifications** - [Dunst](https://github.com/dunst-project/dunst)
+- **Launcher** - [Wofi](https://github.com/SimplyCEO/wofi)
+- **Shell** - [fish](https://fishshell.com/)
+#### Browser
+- **Browser** - [Firefox](https://www.mozilla.org/en-US/firefox/new/)
+- **FirefoxCSS theme** - [PotatoFox](https://codeberg.org/awwpotato/PotatoFox)
+- **Firefox Color - Everblush** - [Theme](https://color.firefox.com/?theme=XQAAAAI4AQAAAAAAAABBqYhm849SCia3ftKEGccwS-xMDPr0sKyH0wP8YfXAvUQaeIbmvChYyXyCdkltZtDq4MPR3cUaQ2HD66C5-hxN2nsBwkKO6xhehBEdaX1PjAQFEspP8fheOCKylVEcsFVBupigTDw8tdIoJ54Z4azj_tQnpGZ1zu1qC_mLOXM2Tig0oUHlS8ahQSc6_927MqZK57GK46r3L3wu5etWeXWmo7EtEeU9hDsICjw9pKpoX7n0wSJbGtVBnXPlGqsBVj433XkfgLkx_vcIIZU)
+### CLI utilites
+- **Fetch Command** - [pfetch](https://github.com/dylanaraps/pfetch)
+- **Tree Thingy** - [cbonsai](https://gitlab.com/jallbrit/cbonsai)
+- **System Monitor** - [btm](https://github.com/ClementTsang/bottom)
+- **IDE** - [neovim](https://lazy.folke.io/)
+
+### Installation
+<details close>
+
+<summary><b>1. Install the Dependencies</b></summary>
+
+#### Disclaimer!
+###### If you use normal Arch, do not install iwd-runit and artix-pipewire-loader as both of these packages have no use on regular Arch!
+
+```
+paru -S iwd-runit iwd impala waybar sway dunst pamixer artix-pipewire-loader /
+pipewire pipewire-pulse wireplumber pipewire-jack dhcpcd firefox wofi / 
+neofetch nerd-fonts kitty fish autotiling
+```
+
+</details>
+
+<br>
+
+<details close>
+
+<summary><b>2. Clone the repo</b></summary>
+
+```
+git clone https://github.com/imrando/dotfiles
+```
+
+</details>
+
+<br>
+
+<details close>
+
+<summary><b>3. Copy the the repo to ~/.config </b></summary>
+
+```
+cp -r dotfiles/* $HOME/.config/
+```
+
+</details>
+
+<br>
+
+<details close>
+
+<summary><b>4. Initialize scripts</b></summary>
+
+```
+chmod +x ~/.conifg/wofi/powermenu.sh
+chmod +x ~/.config/get_distro_icon.sh
+```
+
+</details>
+
+And you're officially done installing!
+
+### Installing legacy branches 
+just do 
+
+```
+git clone -b v1 https://github.com/imrando/dotfiles
+```
+then just follow the directions in the branch
