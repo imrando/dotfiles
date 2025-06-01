@@ -80,6 +80,12 @@ And you're officially done installing!
 
 # Screenshots
 
+![le-desktop](https://github.com/imrando/dotfiles/blob/niri/Screenshots/Screenshot%20from%202025-06-01%2011-07-21.png)
+![voyage sans retour](https://github.com/imrando/dotfiles/blob/niri/Screenshots/Screenshot%20from%202025-06-01%2014-30-47.png)
+![apris midi by malice mizer](https://github.com/imrando/dotfiles/blob/niri/Screenshots/Screenshot%20from%202025-06-01%2014-30-12.png)
+![kikou to sora by malize mizer](https://github.com/imrando/dotfiles/blob/niri/Screenshots/Screenshot%20from%202025-06-01%2014-20-27.png)
+![bel air by malice mizer](https://github.com/imrando/dotfiles/blob/niri/Screenshots/Screenshot%20from%202025-06-01%2014-31-38.png)
+![marchen by klaha](https://github.com/imrando/dotfiles/blob/niri/Screenshots/Screenshot%20from%202025-06-01%2014-45-22.png)
 
 # Credits
 - **Rofi theme** - [link](https://github.com/zawadahmed33/Dotfiles)
