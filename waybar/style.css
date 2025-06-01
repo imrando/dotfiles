@@ -1,0 +1,129 @@
+@import "mocha.css";
+
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: DepartureMono Nerd Font, SymbolsMono Nerd Font;
+    font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+    font-size: 13px;
+    min-width: 8px;
+    min-height: 0px;
+    font-weight: 500;
+}
+
+window#waybar {
+    background-color: transparent;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#tray,
+#workspaces,
+#custom-distro-icon,
+#custom-utils-toggle {
+    padding: 5px 10px;
+    color: @text;
+    margin: 5px;
+    background-color: @crust;
+    border-radius: 5px;
+}
+
+#cpu,
+#temperature,
+#memory,
+#pulseaudio,
+#backlight { 
+	margin-left: 0px;
+	margin-right: 0px;
+	border-radius: 0px;
+}
+
+#cpu {
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+#battery,
+#tray,
+#network,
+#custom-utils-toggle {
+	margin-left: 0px;
+	margin-right: 0px;
+	border-radius: 0px;
+}
+
+#custom-utils-toggle {
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	margin-left: 5px;
+}
+
+button:hover {
+    background: @base;
+    border: 0px;
+    border-top: 0px;
+}
+
+#network {
+	padding-right: 14px;
+}
+
+/* happy pride! */
+
+#custom-distro-icon {
+	background: linear-gradient(#018e71, #21cfab, #9ae9c3, #ffffff, #7cafe4, #4f47cc, #3c1379);
+	color: @mantle;
+	padding-right: 14px;
+	font-size: 21px;
+}
+
+#backlight {
+        border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+#battery.charging, #battery.plugged {
+    color: @green;
+}
+
+/* Using steps() instead of linear as a timing function to limit cpu usage */
+#battery.critical:not(.charging) {
+    background-color: @red;
+    color: @mantle;
+}
+
+#battery {
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+
+#network.disconnected {
+    color: @red;
+}
+
+#tooltip {
+	background: @mantle;
+	color: @mauve;
+}
+
+#workspaces button.focused {
+	background-color: @blue;
+	color: @mantle;
+	padding: 5px 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#workspaces button { 
+	color: @rosewater;
+	padding: 5px 5px;
+	margin: 2px;
+}
+
+

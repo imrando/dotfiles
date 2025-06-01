@@ -1,0 +1,86 @@
+configuration {
+  show-icons: false;
+  display-drun: "drun";
+  disable-history: false;
+}
+
+* {
+  font: "DepartureMono Nerd Font 11";
+  background: #11111b;
+  foreground: #cdd6f4;
+  primary: #89b4fa;
+  secondary: #74c7ec;
+  urgent: #f38ba8;
+}
+
+window {
+  width: 480px;
+  padding: 0px;
+  border: 5px;
+  border-color: @secondary;
+  border-radius: 8px;
+  background-color: @background;
+}
+
+inputbar {
+  spacing: 8px;
+  padding: 48px 16px;
+  text-color: @foreground;
+  background-color: transparent;
+  background-image: url("~/.config/rofi/images/lawson.jpg", width);
+  children: [ prompt,textbox-prompt-colon,entry,case-indicator ];
+}
+
+entry {
+  enabled: true;
+  placeholder: "search....";
+  expand: false;
+  width: 256px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  background-color: @background;
+  text-color: @foreground;
+}
+
+prompt {
+  padding: 5px 10px;
+  border-radius: 8px;
+  background-color: @background;
+  text-color: @secondary;
+}
+mainbox {
+  border:  0;
+  padding: 0;
+}
+
+textbox {
+  text-color: @foreground;
+}
+
+textbox-prompt-colon {
+  enabled: false;
+}
+
+listview {
+  lines: 8;
+  fixed-height: true;
+  scrollbar: false;
+  spacing: 0;
+  padding: 10px;
+  border: 0;
+}
+
+element {
+  padding: 5px 10px 5px 10px;
+  border: 0;
+}
+
+element.selected.normal {
+  background-color: @primary;
+  text-color: @background;
+}
+
+element.alternate.normal {
+  background-color: @background;
+  text-color: @foreground;
+}
