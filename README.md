@@ -40,7 +40,7 @@ After the dependencies you should do:
 # Screenshots 
 ![Nighttab](./raw/2025-04-15T21:04:43,810123060-04:00.png)
 ![Le Nvim?](./raw/2025-04-15T21:08:10,114621514-04:00.png)
-![illuminaty by malice mizer](./raw/2025-04-15T21:15:24,986818351-04:00.png)
+![illuminati by malice mizer](./raw/2025-04-15T21:15:24,986818351-04:00.png)
 ![btm.png](./raw/2025-04-15T21:18:16,791426430-04:00.png)
 ![el desktop](./raw/2025-04-15T21:17:18,616162144-04:00.png)
 
